@@ -9,6 +9,7 @@
 	font-size: 32px;
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 100;
+	color: black;
 }
 header {
 	display: none;
@@ -65,6 +66,10 @@ h2 {
 	font-size: 18px;
 	text-align: center;
 }
+.instagram {
+	text-align: center;;
+	margin: 64px;
+}
 /* ローディングの背景部分のCSS */
 .loader{
   background: #000;
@@ -75,7 +80,7 @@ h2 {
   width: 100%;
   z-index: 10;
 }
- 
+
 /* ローディングのアニメーション部分のCSS (https://projects.lukehaas.me/css-loaders/) */
 .loader-animation,
 .loader-animation:before,
