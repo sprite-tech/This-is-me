@@ -1,13 +1,19 @@
 @charset "utf-8";
 @media (max-width: 670px) {
-    *{
-        font-size: 22px;
-    }
+	*{
+		font-size: 22px;
+	}
+	main {
+		margin: 10px;
+	}
 	h1 {
 		font-size: 36px;
 	}
 	h2 {
 		margin: 24px;
+	}
+	li, li span {
+		font-size: 18px;
 	}
 	.works {
 		flex-flow: column-reverse;
@@ -15,6 +21,9 @@
 	.works img {
 		width: 90%;
 		margin: 30px auto;
+	}
+	.prof {
+		margin: 40px;
 	}
 	.copy-rights {
 		font-size: 14px;
