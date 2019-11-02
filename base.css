@@ -11,9 +11,7 @@
 	font-weight: 100;
 	color: black;
 }
-header {
-	display: none;
-}
+
 .top {
 	display: table-cell;
 	vertical-align: middle;
@@ -24,7 +22,7 @@ header {
 	width: 100%;
 }
 main {
-	margin: 10px;
+	margin: 50px;
 }
 h1 {
   display: flex;
@@ -50,7 +48,10 @@ h1::after {
 	margin-left: .4em;
 }
 h2 {
-	margin: 48px;
+	margin: 64px;
+}
+li {
+	margin: 32px 0;
 }
 .works {
 	display: flex;
@@ -61,8 +62,11 @@ h2 {
 	margin: auto;
 	width: 30%;
 }
+.prof {
+	margin-left: 120px; 
+}
 .copy-rights {
-	margin: 30px auto;
+	margin: 100px auto 30px;
 	font-size: 18px;
 	text-align: center;
 }
