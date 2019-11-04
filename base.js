@@ -24,3 +24,36 @@ $(function(){ setTimeout('stopload()', 10000); });
 function stopload(){
   $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
 }
+
+$(function(){
+  //メニューの表示・非表示
+  $('#menu').click(function(){
+    $('#slide').fadeIn();
+    $('#overlay').show();
+  });
+  $('#close, #overlay').click(function(){
+    $('#slide').fadeOut();
+    $('#overlay').hide();
+  });
+
+  //スクロールで表示・非表示
+  var startPos = 0,winScrollTop = 0;
+  $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop < startPos) {
+        $('#menu').removeClass('hide');
+    } else {
+        $('#menu').addClass('hide');
+    }
+    startPos = winScrollTop;
+  });
+	$('.scr').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top-50;
+      $('body,html').animate({scrollTop:position}, 550, 'swing');
+		$('#slide, #overlay').fadeOut();
+      return false;
+   });
+});
