@@ -70,9 +70,46 @@ li {
 	font-size: 18px;
 	text-align: center;
 }
-.instagram {
-	text-align: center;;
+.go-instagram {
+	text-align: center;
 	margin: 64px;
+}
+.go-instagram a {
+	border-bottom: dashed 1px #a9a9a9;
+}
+.icons {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.icon {
+	margin: 50px auto;
+	text-align: center;
+}
+.icon i {
+	font-size: 200px;	
+}
+.github i {
+	transition: color 0.5s;
+	color: #a9a9a9;
+}
+.github i:hover {
+	color: #000000;
+}
+.instagram i {
+	transition: color 0.5s;
+	color: #a9a9a9;
+}
+.instagram i:hover {
+	color: #f13f79;
+}
+.twitter i {
+	transition: color 0.5s;
+	color: #a9a9a9;
+}
+.twitter i:hover {
+	color: #55acee;
 }
 /* ローディングの背景部分のCSS */
 .loader{
