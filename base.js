@@ -16,7 +16,7 @@ $(function(){
  
 // ページのロードが終わった後の処理
 $(window).load(function(){
-  $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
+  	$('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
 });
  
 // ページのロードが終わらなくても10秒たったら強制的に処理を実行
@@ -41,9 +41,9 @@ $(function(){
   $(window).on('scroll',function(){
     winScrollTop = $(this).scrollTop();
     if (winScrollTop < startPos) {
-        $('#menu').removeClass('hide');
+        $('#menu').fadeIn();
     } else {
-        $('#menu').addClass('hide');
+        $('#menu').fadeOut();
     }
     startPos = winScrollTop;
   });
