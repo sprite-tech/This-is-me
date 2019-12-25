@@ -56,4 +56,17 @@ $(function(){
 		$('#slide, #overlay').fadeOut();
       return false;
    });
+	
+	//modal
+	$('.work').click(function() {
+		$(this).find(".modal").show();
+		$('#overlay').show();
+		$(this).find(".modal").css('display', 'flex');
+		return false;		
+	});
+	$('#overlay').click(function() {
+		$('.modal').hide();
+		$(this).hide();
+		return false;
+	});
 });
